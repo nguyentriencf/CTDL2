@@ -96,13 +96,14 @@ void openGraph(Graph& g)
 
 int TimKiemDT(Graph g, int v)
 {
-	for (int i; i < g.NumVertices; i++)
+	for (int i =0; i < g.NumVertices; i++)
 	{
 		if (g.Vertices[i].Visited == NO && (g.Cost[v][i] != 0 && g.Cost[v][i] != INF))
 		{
 			return i;
 		}
 	}
+	return NULLDATA;
 }
 
 void DFS_Recursion(Graph& g, int start)

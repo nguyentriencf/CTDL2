@@ -38,6 +38,7 @@ struct Path
 	int				Parent;	// đỉnh trước
 };
 
+// đinh nghĩa đỉnh
 struct Graph
 {
 	bool Directed;		// đt có hướng?
